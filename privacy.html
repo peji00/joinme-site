@@ -85,6 +85,12 @@ assistance and published under the operator's responsibility.</p>
 <td>Consent (revocable in iOS/Android settings)</td>
 </tr>
 <tr>
+<td>Device location — <strong>never collected by us</strong></td>
+<td>Your device (optional, with your consent prompt)</td>
+<td>Only to suggest your city for the feed. A <strong>coarse position is read once</strong> and turned into a city name by your device's operating system, then discarded; coordinates are never stored and never transmitted to our servers. Declining changes nothing — you pick a city by name instead. The chosen city (a name) is kept on your device only</td>
+<td>Consent (revocable in iOS/Android settings)</td>
+</tr>
+<tr>
 <td>Technical logs (IP, timestamps) at our infrastructure providers</td>
 <td>Automatic</td>
 <td>Security, abuse prevention, operations</td>
@@ -93,6 +99,7 @@ assistance and published under the operator's responsibility.</p>
 </tbody>
 </table>
 <p>We do not process special-category data by design; anything sensitive you choose to write in free-text fields is under your control and deletable by you.</p>
+<p><strong>Location, in plain words:</strong> if you tap "Use my location" when choosing your city, the app asks the operating system for a coarse position <strong>once</strong>, the operating system's geocoding service turns it into a city name, and the position is then <strong>discarded</strong>. That position never reaches us or anyone working for us; only the city name you end up selecting — the same string you could have typed — scopes which plans you see. The selected city is remembered on your device only.</p>
 <h2>3. Who can see what (privacy by design)</h2>
 <ul>
 <li><strong>Signed-out visitors:</strong> plan titles, areas, times, and hosts' name/photo of <em>active</em> plans only. No profiles, no exact venues, no member lists.</li>
@@ -139,7 +146,7 @@ assistance and published under the operator's responsibility.</p>
 </tr>
 <tr>
 <td>Google (Places API)</td>
-<td>Venue search at plan creation (query text only)</td>
+<td>City search in the feed's city picker and venue search at plan creation (query text plus the selected city's public coordinates)</td>
 <td>US/global</td>
 <td>Google's standard data-processing terms</td>
 </tr>
